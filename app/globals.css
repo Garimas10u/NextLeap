@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 268 100% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 268 100% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 268 100% 14%; 
+    --primary: 268 100% 14%; 
+    --primary-foreground: 0 0% 100%; 
+    --secondary: 268 25% 95%;
+    --secondary-foreground: 268 100% 14%; 
+    --muted: 268 25% 95%; 
+    --muted-foreground: 268 20% 40%;
+    --accent: 268 25% 95%;
+    --accent-foreground: 268 100% 14%; 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 268 25% 90%; 
+    --input: 268 25% 90%;
+    --ring: 268 100% 14%; 
+    --radius: 0.5rem;
+  }
+
+ 
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+.hero-image-wrapper {
+  perspective: 1000px;
+}
+
+.hero-image {
+  transform: rotateY(-15deg) scale(1);
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.hero-image.scrolled {
+  transform: rotateX(0deg) scale(1) translateY(40px);
+}
+
+.grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.grid-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent, rgba(42, 1, 55, 0.9));
+}
