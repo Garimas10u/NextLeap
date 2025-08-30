@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-24">
         
         <div className="flex-1 space-y-6 pl-6 text-center md:text-left">
-          <h1 className="text-5xl text-[#15012b] font-bold md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-5xl text-[#1f033c] font-bold md:text-5xl lg:text-6xl xl:text-7xl">
             Your Partner For Unlocking
             Professional Potential
           </h1>
