@@ -99,7 +99,7 @@ export function EntryForm({ type, entries, onChange }) {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 ">
       <div className="space-y-4">
         {entries.map((item, index) => (
           <Card key={index}>

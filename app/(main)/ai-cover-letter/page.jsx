@@ -8,9 +8,9 @@ export default async function CoverLetterPage() {
   const coverLetters = await getCoverLetters();
 
   return (
-    <div>
-      <div className="flex flex-col md:flex-row gap-2 items-center justify-between mb-5">
-        <h1 className="text-6xl font-bold text-[#210047]">My Cover Letters</h1>
+    <div className="mx-10">
+      <div className="flex flex-col md:flex-row gap-2 items-center justify-between mb-5 ">
+        <h1 className="sm:4xl md:text-5xl font-bold text-[#210047]">My Cover Letters</h1>
         <Link href="/ai-cover-letter/new">
           <Button>
             <Plus className="h-4 w-4 mr-2" />

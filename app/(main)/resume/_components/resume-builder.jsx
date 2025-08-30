@@ -144,9 +144,9 @@ export default function ResumeBuilder({ initialContent }) {
   };
 
   return (
-    <div data-color-mode="light" className="space-y-4">
+    <div data-color-mode="light" className="space-y-4 px-10">
       <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-        <h1 className="font-bold text-[#210047] text-5xl md:text-6xl">
+        <h1 className="font-bold text-[#210047] text-4xl md:text-5xl">
           Resume Builder
         </h1>
         <div className="space-x-2">
