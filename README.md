@@ -10,19 +10,12 @@
 - Dashboard to track progress
 - Gamification to enhance engagement
 
-- ```env
-# Database connection URL
+## Environment Variables
 DATABASE_URL=your_database_connection_string
-
-# Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
-
-# Clerk redirect URLs
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
-
-# Gemini API Key
 GEMINI_API_KEY=your_gemini_api_key
