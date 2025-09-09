@@ -10,16 +10,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NextLeap",
-  description: "",
+  description: "A career platform for the next generation of professionals.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-      appearance={{
-        baseTheme: dark,
-      }}
-    >
+    <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <head>
           <link rel="icon" href="/logo.png" sizes="any" />
