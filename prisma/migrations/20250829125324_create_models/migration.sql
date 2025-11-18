@@ -20,7 +20,7 @@ CREATE TABLE "Assessment" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "quizScore" DOUBLE PRECISION NOT NULL,
-    "questions" JSONB[],
+    "questions" JSON[],
     "category" TEXT NOT NULL,
     "improvementTip" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
